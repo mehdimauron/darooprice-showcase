@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">DarooPrice showcase cover</title>
+  <desc id="desc">A dark teal dashboard-inspired cover for DarooPrice by MAURON.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#0a1d2a"/>
+      <stop offset="1" stop-color="#08291f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#00f5d4"/>
+      <stop offset="1" stop-color="#39d353"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#56d6c3" stroke-opacity=".06"/></pattern>
+  </defs>
+  <style>
+    .pulse{animation:pulse 2.6s ease-in-out infinite}.dash{stroke-dasharray:9 12;animation:flow 4s linear infinite}
+    @keyframes pulse{50%{opacity:.38}}@keyframes flow{to{stroke-dashoffset:-84}}
+  </style>
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+  <circle cx="1090" cy="38" r="170" fill="#00f5d4" opacity=".07" class="pulse"/>
+  <circle cx="35" cy="335" r="145" fill="#39d353" opacity=".05"/>
+  <g transform="translate(72 72)">
+    <text x="0" y="46" font-family="Inter,Segoe UI,sans-serif" font-size="24" font-weight="700" fill="#00f5d4" letter-spacing="5">MAURON SYSTEM</text>
+    <text x="0" y="118" font-family="Inter,Segoe UI,sans-serif" font-size="66" font-weight="800" fill="#f3fbff">DarooPrice</text>
+    <text x="2" y="162" font-family="Inter,Segoe UI,sans-serif" font-size="24" fill="#a8c5cf">Pharmacy price intelligence and monitoring</text>
+    <g transform="translate(0 198)">
+      <rect width="132" height="38" rx="19" fill="#00f5d4" fill-opacity=".12" stroke="#00f5d4" stroke-opacity=".65"/>
+      <circle cx="22" cy="19" r="6" fill="#39d353" filter="url(#glow)"/>
+      <text x="40" y="25" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="700" fill="#dffef7">LIVE SYSTEM</text>
+    </g>
+  </g>
+  <g transform="translate(730 57)">
+    <rect width="398" height="246" rx="18" fill="#091521" stroke="#2a5360"/>
+    <rect x="18" y="18" width="362" height="40" rx="10" fill="#0e2531"/>
+    <circle cx="40" cy="38" r="6" fill="#ff5f57"/><circle cx="60" cy="38" r="6" fill="#febc2e"/><circle cx="80" cy="38" r="6" fill="#28c840"/>
+    <text x="110" y="44" font-family="JetBrains Mono,monospace" font-size="13" fill="#89aab5">price-monitor / overview</text>
+    <rect x="18" y="76" width="108" height="68" rx="11" fill="#0d202b" stroke="#1c4650"/>
+    <rect x="144" y="76" width="108" height="68" rx="11" fill="#0d202b" stroke="#1c4650"/>
+    <rect x="270" y="76" width="110" height="68" rx="11" fill="#0d202b" stroke="#1c4650"/>
+    <text x="34" y="102" font-family="Inter,sans-serif" font-size="12" fill="#79a0aa">TRACKED</text><text x="34" y="130" font-family="Inter,sans-serif" font-size="24" font-weight="700" fill="#f3fbff">240</text>
+    <text x="160" y="102" font-family="Inter,sans-serif" font-size="12" fill="#79a0aa">UPDATED</text><text x="160" y="130" font-family="Inter,sans-serif" font-size="24" font-weight="700" fill="#39d353">+18</text>
+    <text x="286" y="102" font-family="Inter,sans-serif" font-size="12" fill="#79a0aa">SOURCES</text><text x="286" y="130" font-family="Inter,sans-serif" font-size="24" font-weight="700" fill="#00f5d4">03</text>
+    <path d="M34 216 C92 188 128 211 178 174 S269 213 350 159" fill="none" stroke="url(#accent)" stroke-width="4" filter="url(#glow)"/>
+    <path d="M34 226H350" stroke="#31515a" class="dash"/>
+    <circle cx="178" cy="174" r="6" fill="#00f5d4"/><circle cx="350" cy="159" r="6" fill="#39d353"/>
+  </g>
+</svg>
